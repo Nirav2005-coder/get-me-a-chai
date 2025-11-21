@@ -117,7 +117,7 @@ function loadRazorpayScript() {
            { payments.map((p,i)=>{
             return <li key={i} className="my-2 flex gap-2">
               <img width={30} src="user.svg" alt="" />
-              {p.name} donated ₹{p.amount} with a message "{p.message}"
+             {p.name} donated ₹{p.amount} with a message: {"`" + p.message + "`"}
             </li>
 })}
            
